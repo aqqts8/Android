@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/langco"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Lăng Cô Beach"
+        android:textSize="30dp"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:shadowColor="@color/gold"
+        android:shadowRadius="1.5"
+        android:shadowDy="1"
+        android:shadowDx="1"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

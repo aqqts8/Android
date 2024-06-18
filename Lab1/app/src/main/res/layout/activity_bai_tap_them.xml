@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BaiTapThem">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Các kiểu lập trình sự kiện"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/title"
+        />
+
+    <TextView
+        android:id="@+id/tvSoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số a:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        />
+
+    <EditText
+        android:id="@+id/etSoA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvSoA"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/tvSoA"
+        />
+
+    <TextView
+        android:id="@+id/tvSoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số b:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/tvSoA"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        />
+
+    <EditText
+        android:id="@+id/etSoB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvSoB"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/tvSoA"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/tvSoB"
+        />
+
+    <TextView
+        android:id="@+id/ketqua"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:text="..."
+        android:layout_below="@id/etSoB"
+        android:gravity="center"
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:id="@+id/tong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng 2 số"
+        android:layout_below="@id/ketqua"
+        android:onClick="tong"
+        />
+
+    <Button
+        android:id="@+id/hieu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hiệu 2 số"
+        android:layout_below="@id/tong"
+        android:onClick="hieu"
+        />
+
+    <Button
+        android:id="@+id/tich"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Tích 2 số"
+        android:layout_below="@id/hieu"
+        android:onClick="tich"
+        />
+
+    <Button
+        android:id="@+id/thuong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Thương 2 số"
+        android:layout_below="@id/tich"
+        android:onClick="thuong"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Note</string>
+    <string name="clear_shortcut">Xóa dữ liệu</string>
+    <string name="clear_label">Clear</string>
+    <string name="setting_shortcut">Mở cài đặt</string>
+    <string name="setting_label">Settings</string>
+    <string name="exit_shortcut">Thoát ứng dụng</string>
+    <string name="exit_label">Exit</string>
+    <string name="message_caption">Clear</string>
+    <string name="message_content">Clear</string>
+    <string name="close">Close</string>
+    <string name="exit_caption">Clear</string>
+    <string name="exit_content">Clear</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title_activity_table_layout1">tableLayout1</string>
+    <string name="forecolor">ForeColor</string>
+    <string name="backcolor">BackColor</string>
+
+    <string-array name="color_name_array">
+        <item name="red">Red</item>
+        <item name="orange">Orange</item>
+        <item name="yellow">Yellow</item>
+        <item name="green">Green</item>
+        <item name="blue">Blue</item>
+        <item name="indigo">Indigo</item>
+        <item name="violet">Violet</item>
+    </string-array>
+
+    <string-array name="color_array">
+        <item>#FF0000</item> <!-- Red -->
+        <item>#FFA500</item> <!-- Orange -->
+        <item>#FFFF00</item> <!-- Yellow -->
+        <item>#008000</item> <!-- Green -->
+        <item>#0000FF</item> <!-- Blue -->
+        <item>#4B0082</item> <!-- Indigo -->
+        <item>#EE82EE</item> <!-- Violet -->
+    </string-array>
+
+</resources>
