@@ -6,16 +6,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
     private Restaurant r = new Restaurant();
 
-    public void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button save = (Button)findViewById(R.id.save);
+        Button save = (Button) findViewById(R.id.save);
         save.setOnClickListener(onSave);
     }
 
@@ -29,18 +30,18 @@ public class MainActivity extends Activity {
             r.setAddress(address.getText().toString());
 
             RadioGroup type = (RadioGroup) findViewById(R.id.type);
-            switch (type.getCheckedRadioButtonId()) {
-                case R.id.take_out:
-                    r.setType("Take out");
-                    break;
-                case R.id.sit_down:
-                    r.setType("Sit down");
-                    break;
-                case R.id.delivery:
-                    r.setType("Delivery");
-                    break;
+            int checkedId = type.getCheckedRadioButtonId();
+
+            if (checkedId == R.id.take_out) {
+                r.setType("Take out");
+            } else if (checkedId == R.id.sit_down) {
+                r.setType("Sit down");
+            } else if (checkedId == R.id.delivery) {
+                r.setType("Delivery");
             }
+
+            String info = r.getName() + " " + r.getAddress() + " " + r.getType();
+            Toast.makeText(MainActivity.this, info, Toast.LENGTH_LONG).show();
         }
     };
-
 }
