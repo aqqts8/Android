@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#54CC14"
+        android:gravity="center"
+        android:text="Quản lý nhân viên"
+        android:textColor="#FFEB3B"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/tvManv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Mã NV:"
+                android:paddingEnd="70dp"/>
+
+            <EditText
+                android:id="@+id/etManv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Mã nhân viên" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvTennv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Tên NV:" />
+
+            <EditText
+                android:id="@+id/etTennv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tên nhân viên" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvGioitinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Giới Tính:" />
+
+            <RadioGroup
+                android:id="@+id/rdgGioiTinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnNam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"/>
+
+                <RadioButton
+                    android:id="@+id/rbtnNu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"/>
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnNhap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nhập NV"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#54CC14">
+
+        <TextView
+            android:id="@+id/tvDsnv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#54CC14"
+            android:text="Danh sách nhân viên"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:paddingEnd="75dp"/>
+
+        <ImageButton
+            android:id="@+id/btnXoa"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/delete" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvDsnv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
